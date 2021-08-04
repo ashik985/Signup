@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+	background-color: #d6efff;
+}
+.header{
+    width: 100%;
+    box-shadow: 0 0px 16px 0px #00000038;
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    padding: 2% 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+
+}
+span{
+    color: #21b573;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #39393b;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+.nav-links ul li:before{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #21b573;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::before{
+    width: 100%;
+}
+
+.signup-form-section{}
+.container-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sigup{
+    width: 35%;
+    margin: auto;
+    padding: 2% 5%0;
+}
+
+form{}
+form input, form textarea{
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+
+}
+form strong{
+    display: block;
+    font-weight: 600;
+    margin: 20px 0 5px;
+}
+form label{
+    font-size: 16px;
+    margin-right: 10px;
+}
+form input[type="radio"], 
+form input[type="checkbox"]{
+	width: auto;
+}
+
+form input[type="submit"]{
+	width: auto;
+}
+.message{
+	font-weight: 600;
+	padding-bottom: 10px;
+	font-size: 20px;
+}
